@@ -1,0 +1,18 @@
+Medidas Absolutas
+        cm, mm, in(polegada), px, pt(ponto), pc(paica)
+
+        Medidas Relativas
+        em (medida relativa ao tamanho atual da fonte, do M maiúsculo de uma fonte)
+        ex (relativo a altura X de uma fonte)
+        rem (relativa ao root, a fonte que está configurada no body)
+        vw (view width, larguda da view port, relavito ao tamanho da tela, porcentagem da largura da view port)
+        vh (altura da view port)
+        % (porcentagem)
+
+GERALMENTE 1em TEM 16px
+OU SEJA: 2em = 32px
+	 1.5em = 24px
+	 0.5em = 8px
+
+shorthand font (configurando tudo em uma única linh na seguinte ordem):
+   - font-style -> font-weight -> font-size -> font-family
