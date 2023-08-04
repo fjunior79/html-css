@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        main {
+            background-color: white;
+            max-width: 1000px;
+            padding: 10px;
+            margin: auto;
+        }
+
+        header h1 {
+            margin-bottom: 20px;
+        }
+
+        header p {
+            text-indent: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .numero {
+            text-align: right;
+        }
+
+        .posicao {
+            text-align: center;
+            padding: 0px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        footer {
+            padding: 5px;
+            background-color: gray;
+            text-align: center;
+
+        }
+
+        footer > p {
+            margin: 0px;
+            color: white;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Uso de tabelas grandes</h1>
+            <h2>Lista de unidades federativas do Brasil por população</h2>
+            <p>Esta é uma lista da população das unidades federativas brasileiras segundo dados divulgados pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em 28 de junho de 2023, com base no Censo de 2022.</p>
+        </header>
+        <!--
+            ANATOMIA PARA TABELAS GRANDES
+            TABLE
+                THEAD
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
+        -->
+        <table>
+            <thead>
+                <tr>
+                    <th class="posicao">Posição</th>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="posicao">01</td>
+                    <td>São Paulo</td>
+                    <td class="numero">44.420.459</td>
+                </tr>
+                <tr>
+                    <td class="posicao">02</td>
+                    <td>Minas Gerais</td>
+                    <td class="numero">20.538.718</td>
+                </tr>
+                <tr>
+                    <td class="posicao">03</td>
+                    <td>Rio de Janeiro</td>
+                    <td class="numero">16.054.524</td>
+                </tr>
+                <tr>
+                    <td class="posicao">04</td>
+                    <td>Bahia</td>
+                    <td class="numero">14.136.417</td>
+                </tr>
+                <tr>
+                    <td class="posicao">05</td>
+                    <td>Paraná</td>
+                    <td class="numero">11.443.208</td>
+                </tr>
+                <tr>
+                    <td class="posicao">06</td>
+                    <td>Rio Grande do Sul</td>
+                    <td class="numero">10.880.506</td>
+                </tr>
+                <tr>
+                    <td class="posicao">07</td>
+                    <td>Pernanbuco</td>
+                    <td class="numero">9.058.155</td>
+                </tr>
+                <tr>
+                    <td class="posicao">08</td>
+                    <td>Ceará</td>
+                    <td class="numero">8.791.688</td>
+                </tr>
+                <tr>
+                    <td class="posicao">09</td>
+                    <td>Pará</td>
+                    <td class="numero">8.116.132</td>
+                </tr>
+                <tr>
+                    <td class="posicao">10</td>
+                    <td>Santa Catarina</td>
+                    <td class="numero">7.609.601</td>
+                </tr>
+                <tr>
+                    <td class="posicao">11</td>
+                    <td>Goiás</td>
+                    <td class="numero">7.055.228</td>
+                </tr>
+                <tr>
+                    <td class="posicao">12</td>
+                    <td>Maranhão</td>
+                    <td class="numero">6.775.152</td>
+                </tr>
+                <tr>
+                    <td class="posicao">13</td>
+                    <td>Paraíba</td>
+                    <td class="numero">3.974.495</td>
+                </tr>
+                <tr>
+                    <td class="posicao">14</td>
+                    <td>Amazonas</td>
+                    <td class="numero">3.941.175</td>
+                </tr>
+                <tr>
+                    <td class="posicao">15</td>
+                    <td>Espírito Santo</td>
+                    <td class="numero">3.883.486</td>
+                </tr>
+                <tr>
+                    <td class="posicao">16</td>
+                    <td>Mato Grosso</td>
+                    <td class="numero">3.658.813</td>
+                </tr>
+                <tr>
+                    <td class="posicao">17</td>
+                    <td>Rio Grande do Norte</td>
+                    <td class="numero">3.302.406</td>
+                </tr>
+                <tr>
+                    <td class="posicao">18</td>
+                    <td>Piauí</td>
+                    <td class="numero">3.269.200</td>
+                </tr>
+                <tr>
+                    <td class="posicao">19</td>
+                    <td>Alagoas</td>
+                    <td class="numero">3.127.511</td>
+                </tr>
+                <tr>
+                    <td class="posicao">20</td>
+                    <td>Distrito Federal</td>
+                    <td class="numero">2.817.068</td>
+                </tr>
+                <tr>
+                    <td class="posicao">21</td>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="numero">2.756.700</td>
+                </tr>
+                <tr>
+                    <td class="posicao">22</td>
+                    <td>Sergipe</td>
+                    <td class="numero">2.209.558</td>
+                </tr>
+                <tr>
+                    <td class="posicao">23</td>
+                    <td>Rondônia</td>
+                    <td class="numero">1.581.016</td>
+                </tr>
+                <tr>
+                    <td class="posicao">24</td>
+                    <td>Tocantins</td>
+                    <td class="numero">1.511.459</td>
+                </tr>
+                <tr>
+                    <td class="posicao">25</td>
+                    <td>Acre</td>
+                    <td class="numero">830.026</td>
+                </tr>
+                <tr>
+                    <td class="posicao">26</td>
+                    <td>Amapá</td>
+                    <td class="numero">733.508</td>
+                </tr>
+                <tr>
+                    <td class="posicao">27</td>
+                    <td>Roraima</td>
+                    <td class="numero">636.303</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <th>Total da População</th>
+                    <td class="numero"><strong>203.062.512</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+        <p>Dados informativos do Site <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">Wikipedia.org</a></p>
+    </footer>
+    
+</body>
+</html>
