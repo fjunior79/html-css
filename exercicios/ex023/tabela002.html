@@ -35,15 +35,26 @@
             margin-bottom: 20px;
         }
 
+        caption {
+            font-size: 1.5em;
+            background-color: lightgray;
+            padding: 5px;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
             margin: auto;
+            position: relative;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         .numero {
@@ -60,11 +71,16 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
         footer {
             padding: 5px;
             background-color: gray;
             text-align: center;
-
         }
 
         footer > p {
@@ -102,11 +118,12 @@
                     TR, TD, TH
         -->
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
                     <th class="posicao">Posição</th>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -249,13 +266,13 @@
             <tfoot>
                 <tr>
                     <td></td>
-                    <th>Total da População</th>
+                    <th scope="row">Total da População</th>
                     <td class="numero"><strong>203.062.512</strong></td>
                 </tr>
             </tfoot>
         </table>
     </main>
-
+    
     <footer>
         <p>Dados informativos do Site <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank">Wikipedia.org</a></p>
     </footer>
