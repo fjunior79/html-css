@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contas a Pagar</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 2em;
+            font-weight: border;
+            background-color: red;
+            color: white;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        th {
+            background-color: rgb(198, 196, 196);
+            color: red;
+        }
+
+        .pago {
+            color: red;
+        }
+
+        .valor {
+            text-align: right;
+        }
+
+        .total, .vtotal {
+            background-color: rgb(3, 3, 87);
+            color: rgb(255, 255, 255);
+            font-weight: 600;
+        }
+
+        .total {
+            text-align: right;
+        }
+       
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cvence">
+            <col class="cdescri">
+            <col class="cpago">
+            <col class="cvalor">
+            <col class="cdia">
+        </colgroup>
+        <caption>JANEIRO DE 2024</caption>
+        <tr>
+            <th scope="col">VENCE</th>
+            <th scope="col">DESCRIÇÃO</th>
+            <th scope="col"></th>
+            <th scope="col">VALOR</th>
+            <th scope="col">PAGO DIA</th>
+        </tr>
+        <tr>
+            <td>DIA 07</td>
+            <td>FGTS</td>
+            <td class="pago">PAGO</td>
+            <td class="valor">R$ 520,83</td>
+            <td>28/12/2023</td>
+        </tr>
+        <tr>
+            <td>DIA 09</td>
+            <td>CEMIG</td>
+            <td class="pago">PAGO</td>
+            <td class="valor">R$ 161,12</td>
+            <td>28/12/2023</td>
+        </tr>
+        <tr>
+            <td>DIA 10</td>
+            <td>CONTADORA</td>
+            <td class="pago">PAGO</td>
+            <td class="valor">R$ 330,00</td>
+            <td>10/01/2024</td>
+        </tr>
+        <tr>
+            <td>DIA 10</td>
+            <td>INTERNET</td>
+            <td class="pago">PAGO</td>
+            <td class="valor">R$ 79,90</td>
+            <td>10/01/2024</td>
+        </tr>
+        <tr>
+            <td>DIA 12</td>
+            <td>COPASA</td>
+            <td class="pago">PAGO</td>
+            <td class="valor">R$ 218,50</td>
+            <td>28/12/2023</td>
+        </tr>
+        <tr>
+            <td>DIA 12</td>
+            <td>CARTÃO SANTANDER</td>
+            <td class="pago">PAGO</td>
+            <td class="valor">R$ 585,22</td>
+            <td>10/01/2024</td>
+        </tr>
+        <tr>
+            <td>DIA 15</td>
+            <td>VALE FUNCIONÁRIO</td>
+            <td class="pago">PAGO</td>
+            <td class="valor">R$ 528,00</td>
+            <td>15/01/2024</td>
+        </tr>
+        <tr>
+            <td>DIA 15</td>
+            <td>UNIMED</td>
+            <td class="pago">PAGO</td>
+            <td class="valor">R$ 1.059,57</td>
+            <td>15/01/2024</td>
+        </tr>
+        <tr>
+            <td>DIA 20</td>
+            <td>INSS</td>
+            <td class="pago">PAGO</td>
+            <td class="valor">R$ 449,56</td>
+            <td>16/01/2024</td>
+        </tr>
+        <tr>
+            <td>DIA 20</td>
+            <td>SIMPLES</td>
+            <td class="pago">PAGO</td>
+            <td class="valor">R$ 484,00</td>
+            <td>16/01/2024</td>
+        </tr>
+        <tr>
+            <td>DIA 22</td>
+            <td>NUBANK</td>
+            <td class="pago">PAGO</td>
+            <td class="valor">R$ 5.210,79</td>
+            <td>22/01/2024</td>
+        </tr>
+        <tr>
+            <td>DIA 23</td>
+            <td>CARTÃO CARREFOUR</td>
+            <td class="pago">PAGO</td>
+            <td class="valor">R$ 413,37</td>
+            <td>23/01/2024</td>
+        </tr>
+        <tr>
+            <td>DIA 25</td>
+            <td>TIM JUNIOR</td>
+            <td class="pago">PAGO</td>
+            <td class="valor">R$ 63,99</td>
+            <td>24/01/2024</td>
+        </tr>
+        <tr>
+            <td>DIA 31</td>
+            <td>PAGTO FUNCIONÁRIO</td>
+            <td class="pago"></td>
+            <td class="valor">R$ 1.505,85</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="color: white;">00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="total" colspan="3">TOTAL>>></td>
+            <td class="vtotal" colspan="2">R$ 15.779,15</td>
+        </tr>
+    </table>
+</body>
+</html>
